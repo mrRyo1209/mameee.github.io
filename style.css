@@ -1,12 +1,14 @@
 /* -------------------- 全体 -------------------- */
 :root {
-  --theme-color: #2563eb;
-  --theme-soft: #eff6ff;
-  --bg-color: #f4f6f9;
-  --card-bg: #ffffff;
-  --text-main: #1e293b;
-  --text-sub: #64748b;
-  --border-color: #e2e8f0;
+  --theme-color: #c89b6e;
+  --theme-hover: #ddb48a;
+  --theme-soft: rgba(200, 155, 110, 0.14);
+  --bg-color: #111111;
+  --card-bg: #1a1817;
+  --sub-card-bg: #23201e;
+  --text-main: #f3efe9;
+  --text-sub: #b5aba0;
+  --border-color: #332d29;
 }
 
 * {
@@ -67,9 +69,8 @@ a {
 }
 
 a:hover {
-  color: #1d4ed8;
+  color: var(--theme-hover);
   text-decoration: underline;
-  opacity: 0.85;
 }
 
 /* -------------------- リスト -------------------- */
@@ -80,13 +81,13 @@ ul {
   background-color: var(--card-bg);
   border: 1px solid var(--border-color);
   border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.04);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
 }
 
 ul ul {
   margin: 8px 0 4px;
   padding: 8px 16px;
-  background-color: var(--bg-color);
+  background-color: var(--sub-card-bg);
   box-shadow: none;
 }
 
@@ -111,7 +112,7 @@ table {
   width: 100%;
   margin-bottom: 24px;
   background-color: var(--card-bg);
-  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.04);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
 }
 
 tr {
@@ -119,7 +120,7 @@ tr {
 }
 
 tr:nth-child(2n) {
-  background-color: #f8fafc;
+  background-color: var(--sub-card-bg);
 }
 
 th {
